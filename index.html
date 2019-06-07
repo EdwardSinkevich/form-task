@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-wrapper unfilled-form">
+        <h2 class="form-title">FILL IN THE FORM</h2>
+        <form id="questionnaire-form" action="#" onsubmit="return false;">
+          <div class="fieldset">
+            <legend class="block-title">General Information</legend>
+            <div class="input-item">
+              <label class="label-input" for="name-field"
+                >Name:<span class="required-field" title="Required field"
+                  >*</span
+                ></label
+              >
+              <input
+                name="name-field"
+                class="input-field"
+                type="text"
+                placeholder="Name"
+                maxlength="30"
+                required
+              />
+            </div>
+            <div class="input-item">
+              <label class="label-input" for="surname-field"
+                >Surname:<span class="required-field" title="Required field"
+                  >*</span
+                ></label
+              >
+              <input
+                name="surname-field"
+                class="input-field"
+                type="text"
+                placeholder="Surname"
+                maxlength="30"
+                required
+              />
+            </div>
+            <div class="input-item">
+              <label class="label-input" for="patronymic-field"
+                >Patronymic:</label
+              >
+              <input
+                name="patronymic-field"
+                class="input-field"
+                type="text"
+                placeholder="Patronymic"
+                maxlength="30"
+              />
+            </div>
+            <div class="input-item">
+              <label class="label-input" for="day-field"
+                >Date of birth:<span
+                  class="required-field"
+                  title="Required field"
+                  >*</span
+                >
+              </label>
+              <div class="input-birth">
+                <input
+                  id="day-field"
+                  name="day-field"
+                  class="day-field input-field"
+                  type="text"
+                  placeholder="Day"
+                  maxlength="2"
+                  required
+                />
+                <div class="month-wrapper">
+                  <select id="month-field" name="month-field" class="month-field input-field" required>
+                    <option disabled value="" selected>Month</option>
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                  </select>
+                </div>
+                <input
+                  id="year-field"
+                  name="year-field"
+                  class="year-field input-field"
+                  type="text"
+                  placeholder="Year"
+                  maxlength="4"
+                  required
+                />
+              </div>
+            </div>
+            <div class="input-item">
+              <label class="label-input" for="surname-field">Photo:</label>
+              <input id="attach-photo" name="attach-photo" type="file"/>
+            </div>
+          </div>
+          <div class="fieldset">
+            <legend class="block-title">Education</legend>
+            <div class="input-item">
+              <label class="label-input" for="institution-field"
+                >Educational Institution:<span
+                  class="required-field"
+                  title="Required field"
+                  >*</span
+                ></label
+              >
+              <input
+                name="institution-field"
+                class="input-field"
+                type="text"
+                placeholder="Educational Institution"
+                required
+              />
+            </div>
+            <div class="input-item">
+              <label class="label-input" for="faculty-field">Faculty:</label>
+              <input
+                name="faculty-field"
+                class="input-field"
+                type="text"
+                placeholder="Faculty"
+              />
+            </div>
+            <div class="input-item">
+              <label class="label-input" for="specialization-field"
+                >Specialization:</label
+              >
+              <input
+                name="specialization-field"
+                class="input-field"
+                type="text"
+                placeholder="Specialization"
+              />
+            </div>
+            <div class="input-item">
+              <label class="label-input" for="graduation-field"
+                >Year of graduation:<span
+                  class="required-field"
+                  title="Required field"
+                  >*</span
+                ></label
+              >
+              <input
+                id="graduation-field"
+                name="graduation-field"
+                class="input-field"
+                type="text"
+                placeholder="Year of graduation"
+                maxlength="4"
+                required
+              />
+            </div>
+          </div>
+          <div class="fieldset">
+            <legend class="block-title">Contacts</legend>
+            <div class="input-item">
+              <label class="label-input" for="phone-field"
+                >Phone:<span class="required-field" title="Required field"
+                  >*</span
+                ></label
+              >
+              <input
+                id="phone-field"
+                name="phone-field"
+                class="input-field"
+                type="tel"
+                placeholder="+375 (29) 123-45-67"
+                required
+              />
+            </div>
+            <div class="input-item">
+              <label class="label-input" for="mail-field">Mail:</label>
+              <input
+                name="mail-field"
+                class="input-field"
+                type="text"
+                placeholder="mail@example.com"
+              />
+            </div>
+            <div class="input-item">
+              <label class="label-input" for="skype-field">Skype:</label>
+              <input
+                name="skype-field"
+                class="input-field"
+                type="text"
+                placeholder="Skype"
+              />
+            </div>
+            <div class="input-item">
+              <label class="label-input" for="telegram-field">Telegram:</label>
+              <input
+                name="telegram-field"
+                class="input-field"
+                type="text"
+                placeholder="Telegram"
+              />
+            </div>
+          </div>
+          <input
+            id="submit-btn"
+            class="submit-btn"
+            type="submit"
+            value="Submit"
+          />
+        </form>
+      </div>
+    </div>
+    <div id="result-form" class="container result-form">
+      <div class="form-wrapper">
+        <h2 class="form-title">New Employee</h2>
+        <div>
+          <div class="fieldset">
+            <h3 class="block-title">General Information</h3>
+            <div class="output-item">
+              <p class="label-input">Name:</p>
+              <p id="entered-name" class="output-field"></p>
+            </div>
+            <div class="output-item">
+              <p class="label-input">Surname:</p>
+              <p id="entered-surname" class="output-field"></p>
+            </div>
+            <div class="output-item">
+              <p class="label-input">Patronymic:</p>
+              <p id="entered-patronymic" class="output-field"></p>
+            </div>
+            <div class="output-item">
+              <p class="label-input">Date of birth:</p>
+              <p id="entered-birth" class="output-field"></p>
+            </div>
+            <div class="output-item">
+              <p class="label-input">Photo:</p>
+              <img id="employee-photo" class="employee-photo"
+                alt="New employee photo"
+                width="115"
+                height="140"
+              />
+            </div>
+          </div>
+          <div class="fieldset">
+            <h3 class="block-title">Education</h3>
+            <div class="output-item">
+              <p class="label-input">Educational Institution:</p>
+              <p id="entered-institution" class="output-field"></p>
+            </div>
+            <div class="output-item">
+              <p class="label-input">Faculty:</p>
+              <p id="entered-faculty" class="output-field"></p>
+            </div>
+            <div class="output-item">
+              <p class="label-input">Specialization:</p>
+              <p id="entered-specialization" class="output-field"></p>
+            </div>
+            <div class="output-item">
+              <p class="label-input">Year of graduation:</p>
+              <p id="entered-graduation" class="output-field"></p>
+            </div>
+          </div>
+          <div class="fieldset">
+            <h3 class="block-title">Contacts</h3>
+            <div class="output-item">
+              <p class="label-input">Phone:</p>
+              <p id="entered-phone" class="output-field"></p>
+            </div>
+            <div class="output-item">
+              <p class="label-input">Mail:</p>
+              <p id="entered-mail" class="output-field"></p>
+            </div>
+            <div class="output-item">
+              <p class="label-input">Skype:</p>
+              <p id="entered-skype" class="output-field"></p>
+            </div>
+            <div class="output-item">
+              <p class="label-input">Telegram:</p>
+              <p id="entered-telegram" class="output-field"></p>
+            </div>
+          </div>
+        </div>
+        <a id="download-btn" class="download-btn">Download</a>
+      </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

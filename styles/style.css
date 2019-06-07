@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-width: 510px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background: #e6e6e6;
+}
+
+.form-wrapper {
+  width: 920px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 62px 55px 90px 55px;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.fieldset {
+  margin-top: 25px;
+}
+
+.block-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.label-input {
+  width: 180px;
+  display: inline-block;
+}
+
+.input-item {
+  margin-bottom: 10px;
+}
+
+.input-field {
+  width: 50%;
+  height: 38px;
+  padding: 0 11px;
+  border: 1px solid #cbd1d4;
+  color: #333333;
+}
+
+.input-field::placeholder {
+  color: #acb5ba;
+}
+
+.input-birth {
+  display: inline-block;
+}
+
+.day-field {
+  width: 60px;
+}
+
+.month-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.month-field {
+  width: 100%;
+}
+
+.month-field:invalid {
+  color: #acb5ba;
+}
+
+.month-field option:not(:first-child) {
+  color: #333333;
+}
+
+.year-field {
+  width: 80px;
+}
+
+.required-field {
+  color: #ff0000;
+}
+
+.submit-btn {
+  padding: 10px 25px 10px 25px;
+  margin-top: 30px;
+}
+
+.result-form {
+  display: none;
+}
+
+.output-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.output-field {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  min-height: 38px;
+  padding: 0 11px;
+  border: 1px solid #cbd1d4;
+  color: #333333;
+  word-break: break-all;
+}
+
+.employee-photo {
+  display: none;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 25px 10px 25px;
+  text-decoration: none;
+  color: #333333;
+  background-color: #d6d6d6;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonface;
+  -webkit-appearance: push-button;
+  user-select: none;
+}
+
+@media print {
+  .unfilled-form,
+  .download-btn {
+    display: none;
+  }
+}
