@@ -89,6 +89,10 @@ body {
   width: 80px;
 }
 
+.phone-field {
+  color: #acb5ba;
+}
+
 .required-field {
   color: #ff0000;
 }
@@ -135,6 +139,12 @@ body {
   border-color: buttonface;
   -webkit-appearance: push-button;
   user-select: none;
+}
+
+.wrong-input {
+  display: none;
+  color: #e1553f;
+  margin-left: 10px;
 }
 
 @media print {

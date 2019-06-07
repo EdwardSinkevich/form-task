@@ -64,7 +64,7 @@
                   >*</span
                 >
               </label>
-              <div class="input-birth">
+              <div id="input-birth" class="input-birth">
                 <input
                   id="day-field"
                   name="day-field"
@@ -100,6 +100,7 @@
                   maxlength="4"
                   required
                 />
+                <div id="wrong-birth-input" class="wrong-input">Wrong date!</div>
               </div>
             </div>
             <div class="input-item">
@@ -162,6 +163,7 @@
                 maxlength="4"
                 required
               />
+              <div id="wrong-graduation-input" class="wrong-input">Wrong year!</div>
             </div>
           </div>
           <div class="fieldset">
@@ -175,9 +177,9 @@
               <input
                 id="phone-field"
                 name="phone-field"
-                class="input-field"
+                class="input-field phone-field"
                 type="tel"
-                placeholder="+375 (29) 123-45-67"
+                value="+375-"
                 required
               />
             </div>
